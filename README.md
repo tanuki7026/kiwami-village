@@ -1,184 +1,294 @@
-# kiwami-village
+
 <!DOCTYPE html>
-
 <html lang="ja">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>きわみ村公式サイト</title>
 
 <style>
-
 body {
-
   margin: 0;
-
-  background: #f1f0e8;
-
-  color: #292c25;
-
   font-family: sans-serif;
-
+  background: #f3f0e7;
+  color: #333;
 }
-
 header {
-
-  background: #34483a;
-
+  background: #526b50;
   color: white;
-
-  padding: 24px 16px;
-
-}
-
-h1 { margin: 0; letter-spacing: 3px; }
-
-header p { margin-bottom: 0; }
-
-main {
-
-  max-width: 700px;
-
-  margin: auto;
-
-  padding: 20px 16px;
-
-}
-
-section {
-
-  background: white;
-
-  padding: 18px;
-
-  margin: 16px 0;
-
-  border: 1px solid #d5d4c9;
-
-}
-
-h2 {
-
-  font-size: 18px;
-
-  border-bottom: 1px solid #aaa;
-
-  padding-bottom: 8px;
-
-}
-
-.notice { color: #8a3028; }
-
-footer {
-
-  background: #292c25;
-
-  color: white;
-
-  padding: 20px;
-
+  padding: 25px 15px;
   text-align: center;
-
-  font-size: 12px;
-
 }
-
-a { color: #34483a; }
-
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 18px;
+}
+section {
+  background: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+}
+h2 {
+  border-bottom: 2px solid #526b50;
+  padding-bottom: 8px;
+}
+.notice {
+  color: #8b2929;
+  font-weight: bold;
+}
+input {
+  padding: 10px;
+  max-width: 95%;
+}
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #666;
+  font-size: 13px;
+}
+.dark {
+  background: #171717;
+  color: #eee;
+  min-height: 100vh;
+  padding: 25px;
+  box-sizing: border-box;
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-  <h1>きわみ村</h1>
-
-  <p>きわみ村公式ウェブサイト</p>
-
+  <h1>きわみ村公式サイト</h1>
+  <p>緑と眠りに包まれた、静かな村。</p>
 </header>
 
-<main>
+<main id="main">
 
-  <p>トップページ ＞ 村のご案内</p>
+<section>
+  <h2>村からのお知らせ</h2>
+  <p>秋の村民集会について</p>
+  <p>村民の皆様は、午後8時までにご帰宅ください。</p>
+</section>
 
-  <section>
+<section>
+  <h2>伝統行事に関するお知らせ</h2>
+  <p>「第256回 眠り祭」の開催について</p>
+  <p>今年の眠り祭は、村の平穏と「ねむみのきわみ様」の御霊を鎮めるため、特別に深夜零時まで執り行われます。</p>
+  <p class="notice">※祭りの間、境内および役場周辺への一般村民の立ち入りは固く禁じます。</p>
+</section>
 
-    <h2>村長からのご挨拶</h2>
+<section>
+  <h2>きわみ村について</h2>
+  <p>きわみ村は、古くからの伝統を大切にする山あいの村です。</p>
+  <p>村の人口：256人</p>
+  <p>名産品：納豆ご飯</p>
+</section>
 
-    <p>村民の皆様、こんにちは。</p>
+<section>
+  <h2>村の決まり</h2>
+  <p>一、夜八時以降は外出を控えること。</p>
+  <p>二、村内放送には必ず耳を傾けること。</p>
+  <p class="notice">三、村に存在しない人の名前を口にしないこと。</p>
+</section>
 
-    <p>今年も人口が増えず、誠におめでとうございます。</p>
+<section>
+  <h2>村民向けのお知らせ</h2>
+  <p>先月の村民名簿に誤りがありました。</p>
+  <p>該当する方は、役場までお申し出ください。</p>
+  <p>なお、名簿の再発行は行いません。</p>
+</section>
 
-    <p>皆様が安心して暮らせる村づくりに努めてまいります。</p>
+<section>
+  <h2>訂正のお知らせ</h2>
+  <p>村の決まり・第三条について、訂正はありません。</p>
+  <p>なお、第三条の内容に関するお問い合わせには回答できません。</p>
+</section>
 
-  </section>
+<section>
+  <h2>人口統計に関するお知らせ</h2>
+  <p>本年度の村民数は256人で確定しました。</p>
+  <p>昨年度からの増減はありません。</p>
+  <p>なお、個別の村民数に関するお問い合わせには回答できません。</p>
+</section>
 
-  <section>
+<section>
+  <h2>村の管理体制について</h2>
+  <p>村の平穏と伝統は、以下の役場職員による管理のもとで維持されています。</p>
+  <ul>
+    <li>村長代行：機野 玲</li>
+    <li>記録係：黒瀬 とうじ</li>
+    <li>管理係：立風 桃李</li>
+    <li>祭事担当：音田 奏鳴</li>
+  </ul>
+  <p class="notice">※不審な点については、速やかに役場職員までご報告ください。</p>
+</section>
 
-    <h2>きわみ村の概要</h2>
-
-    <p>人口：1,204人</p>
-
-    <p>世帯数：486世帯</p>
-
-    <p>確認制度：全世帯確認制度を実施中</p>
-
-  </section>
-
-  <section>
-
-    <h2>お知らせ</h2>
-
-    <p>・全世帯確認制度へのご協力について</p>
-
-    <p>・回覧板の受け取り方法について</p>
-
-    <p class="notice">・未確認世帯に関するお問い合わせは受け付けておりません。</p>
-
-  </section>
-
-  <section>
-
-    <h2>よくある質問</h2>
-
-    <p>Q. 村の人口を教えてください。</p>
-
-    <p>A. 1,204人です。</p>
-
-    <p>Q. 自分の名前が名簿にありません。</p>
-
-    <p>A. ご自身についてのお問い合わせは受け付けておりません。</p>
-
-  </section>
-
-  <section>
-
-    <h2>村役場からのお知らせ</h2>
-
-    <p>全世帯確認制度は、村民の安全を守るための制度です。</p>
-
-    <p>確認の結果、異常がなかったことをご報告いたします。</p>
-
-  </section>
+<section>
+  <h2>村内資料検索</h2>
+  <p>村に関する記録を検索できます。</p>
+  <input id="searchBox" placeholder="キーワードを入力">
+  <button onclick="searchRecords()">検索</button>
+  <div id="searchResult"></div>
+</section>
 
 </main>
 
-<footer>
+<footer>© きわみ村役場 広報課</footer>
 
-  きわみ村役場<br>
+<script>
+const officials = {
+  "山中 手里": "村長。65歳の女性。現在行方不明。",
+  "村長": "山中 手里。65歳の女性。現在行方不明。",
+  "機野 玲": "副村長。30歳の男性。現在、村長代理を務めている。",
+  "黒瀬 とうじ": "村の記録係。25歳の男性。元自衛官。冷静で観察力が鋭い。",
+  "立風 桃李": "村の管理係。23歳の女性。仕事に厳しく、村民からの信頼も厚い。",
+  "音田 奏鳴": "祭事担当。25歳の女性。明るく親しみやすい。"
+};
 
-  全世帯、異常なし。<br>
+const records = [
+  {
+    keywords: ["人口記録", "人口"],
+    text: "人口記録：村民数は256人で確定。"
+  },
+  {
+    keywords: ["名簿", "村民"],
+    text: "村民名簿：先月、記載内容に誤りが見つかった。"
+  },
+  {
+    keywords: ["きわみ村"],
+    text: "村の記録：第三条に関する問い合わせには回答できない。"
+  },
+  {
+    keywords: ["きわみ", "ねむみのきわみ"],
+    history: true
+  }
+];
 
-  <span>最終更新：本日</span>
+function searchRecords() {
+  const word = document.getElementById("searchBox").value.trim();
+  const result = document.getElementById("searchResult");
 
-</footer>
+  if (!word) {
+    result.innerHTML = "<p>キーワードを入力してください。</p>";
+    return;
+  }
+
+  if (officials[word]) {
+    result.innerHTML =
+      "<h2>" + word + "</h2><p>" + officials[word] + "</p>";
+    return;
+  }
+
+  if (word === "納豆ご飯") {
+    showSecret();
+    return;
+  }
+
+  if (["代償", "生贄", "いけにえ"].includes(word)) {
+    showUnderground();
+    return;
+  }
+
+  const found = records.filter(record =>
+    record.keywords.some(keyword => keyword.includes(word) || word.includes(keyword))
+  );
+
+  if (found.length === 0) {
+    result.innerHTML = "<p>該当する資料はありません。</p>";
+    return;
+  }
+
+  result.innerHTML = found.map(record => {
+    if (record.history) {
+      return '<p><button onclick="showHistory()">きわみ村の歴史</button></p>';
+    }
+    return "<p>" + record.text + "</p>";
+  }).join("");
+}
+
+function showHistory() {
+  document.getElementById("searchResult").innerHTML = `
+    <h2>きわみ村の歴史</h2>
+    <p>昔、ねむみのきわみという神様がいました。</p>
+    <p>その神様は世界を創造し、人々に睡眠を教えました。</p>
+    <p>世界を創り上げたねむみ様は人間に紛れて村に住み、過ごしていました。</p>
+    <p>その村はとても平和で、作物も沢山採れていました。</p>
+    <p>しかし、ある日の災害で不作の年が続きました。</p>
+    <p>村民は困ってしまいました。</p>
+    <p>そこで、きわみ様は神の力を使い作物を育てました。</p>
+    <p>すると、作物がどんどん成長しました。</p>
+    <p>きわみ様は村民から称えられました。</p>
+    <p>ある日、村長はきわみ様で金儲けをしようと考えました。</p>
+    <p>「そうだ、きわみ様を捕まえて神の力でうちの畑を育ててもらおう」</p>
+    <p>きわみ様は村長の企みに気づき、村から逃げてしまいました。</p>
+    <p>そのことを知った村民たちは、村長を生贄にしてきわみ様を取り戻そうとしている。</p>
+    <p>おしまい</p>
+    <button onclick="backToSite()">サイトに戻る</button>
+  `;
+}
+
+function showSecret() {
+  document.getElementById("main").innerHTML = `
+    <div class="dark">
+      <p style="color:#999">記録番号：256-01</p>
+      <h1>村民管理記録</h1>
+      <hr>
+      <p>登録人数：256人</p>
+      <p>確認済みの名簿：255人分</p>
+      <p>未確認の記録：1件</p>
+      <hr>
+      <p style="color:#ff7777">この記録を閲覧したことは、記録されます。</p>
+      <button onclick="backToSite()">元のサイトへ戻る</button>
+    </div>
+  `;
+}
+
+function showUnderground() {
+  document.getElementById("main").innerHTML = `
+    <div class="dark" id="screen">
+      <p style="color:#ff7777">【緊急警報】地下第256号室 - 特別隔離室</p>
+      <h1>地下ネットワーク監視ログ</h1>
+      <hr>
+      <p>誰か見ていますか……？ 私は機野たちに地下へ閉じ込められました。</p>
+      <p>祭りが始まる前にここから連れ出してほしい。彼らは私を生贄にして……っ！</p>
+      <p>村長（山中 手里）</p>
+      <hr>
+      <p>※三桁の数字を入力せよ：</p>
+      <input id="passInput" type="password" maxlength="3">
+      <button onclick="checkPass()">解除</button>
+      <button onclick="backToSite()">元のサイトへ戻る</button>
+    </div>
+  `;
+}
+
+function checkPass() {
+  const value = document.getElementById("passInput").value;
+
+  if (value === "710") {
+    document.getElementById("screen").innerHTML = `
+      <h1 style="color:#77ff77">救出成功</h1>
+      <p>あなたのおかげで村長は助かりました。</p>
+      <p>プレイしていただきありがとうございました。</p>
+      <p>きわみ村 村長　狸</p>
+      <button onclick="backToSite()">タイトルへ戻る</button>
+    `;
+  } else {
+    alert("パスワードが違います");
+  }
+}
+
+function backToSite() {
+  location.reload();
+}
+</script>
 
 </body>
-
 </html>
